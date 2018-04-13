@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
+  <title>Data Manipulation 1</title>
+</head>
+
+<body>
+  <h2>Data Manipulation 1</h2>
+  <p>Pada kesempatan kali ini Anda akan mempelajari bagaimana memanipulasi data, mengubah dari sebuah bentuk data menjadi bentuk
+    yang lain, pada javascript.
+  </p>
+  <p>
+    <strong>Format Masukan</strong>
+  </p>
+  <p>Anda akan mengerjakan sebuah fungsi yang memiliki 2 buah parameter.
+    <ul>
+      <li>Argumen pertama adalah
+        <strong>
+          <em>data</em>
+        </strong> yang berbentuk sebuah object. </li>
+      <li>Argumen kedua adalah
+        <strong>
+          <em>searchText</em>
+        </strong> yang berbentuk sebuah string.</li>
+    </ul>
+  </p>
+  <p>
+    <strong>Format Keluaran</strong>
+  </p>
+  <p>
+    Pada setiap test case, Anda harus menenentukan object-object mana sajakah yang termasuk dari kata kunci yang digunakan untuk
+    mencari. Anda harus memperhatikan, search text dapat berupa nama, ataupun kategori, object harus di masukkan jika salah
+    satu huruf saja termasuk pada nama ataupun kategori object tersebut, dan case insensitive, jika pencarian kosong, maka tampilkan semua data.
+    Output berupa
+    <strong>
+      <em>array</em>
+    </strong> object hasil dari pencarian tersebut.
+  </p>
+  <p>
+    <strong>Contoh Masukan</strong>
+  </p>
+  <pre><code>
+  var data = {
+    "Books": [{
+      "id": 1,
+      "name": "Gramedia",
+      "floor": "G"
+    },{
+      "id": 2,
+      "name": "Togamas",
+      "floor": "UG"
+    }],
+    "Food & Beverages": [{
+      "id": 3,
+      "name": "KFC",
+      "floor": "LG"
+    }];
+    var searchText = 'Gra';
+  </code></pre>
+  <p>
+    <strong>Contoh Keluaran</strong>
+  </p>
+  <pre><code>
+    [{
+      "id": 1,
+      "name": "Gramedia",
+      "floor": "G",
+      "category": "Books"
+    }]
+  </code></pre>
+  <p>
+    <strong>Penjelasan</strong>
+  </p>
+  <p>
+    Pada
+    <code>data</code> hanya terdapat 1 object yang mengandung
+    <code>'Gra'</code> yaitu object dengan nama "Gramedia", sehingga object dengan name
+    <code>Gramedia</code> tersebut dimasukkan ke dalam array, dan di jadikan sebagai return value functionnya
+  </p>
+  <p>
+    Untuk mengerjakan silakan buka
+    <code>index.js</code>, dan kerjakan pada
+    <code>function search(data, searchText)</code>
+  </p>
+  <p>
+    Selamat Mengerjakan!
+  </p>
+  <h3>
+    Hasil
+  </h3>
+  <div id="results">
+
+  </div>
+  <script src="data.min.js"></script>
+  <script src="test.min.js"></script>
+  <script src="index.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
